@@ -77,7 +77,8 @@ nrfjprog -f nrf52 --reset
 ```
 ## 3- Using the Command Prompt(Windows) and West Command Line Tool
 Use this option also if you like to work with the Command Prompt! 
-Download the West Command Line tool and its dependencies.  
+> Note: You must have the West Command Line tool and its dependencies downloaded.
+
 First set up IntelliSense in VS Code, to detect code and header files in the following way.  
 1- Add .vscode folder under the main directory.  
 2- In the folder add a file called c_cpp_properties.json.  
@@ -105,3 +106,8 @@ Run the following commands.
 ```
 west build -p auto -b nrf52833dk_nrf52833 
 ```
+The final step is to flash the nRF SoC with the following command
+```
+west flash
+```
+> Note: west flash invokes CMake and then Ninja
