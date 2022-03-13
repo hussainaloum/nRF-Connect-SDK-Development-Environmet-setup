@@ -38,6 +38,8 @@ To flash use the "Flash" button in the extension
 
 ## 2- Using the Command Prompt(Windows), CMake, Ninja and nRF Command Line Tools
 Use this option if you like to work with the Command Prompt!  
+> Note: You must have CMake, Ninja and the nRF Command Line Tools downloaded.
+
 First set up IntelliSense in VS Code, to detect code and header files in the following way.  
 1- Add .vscode folder under the main directory.  
 2- In the folder add a file called c_cpp_properties.json.  
